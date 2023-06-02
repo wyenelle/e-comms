@@ -4,9 +4,26 @@
     align-items: center;
     border: 2px solid red;
     height: 40px;
+    position: relative;
 }
 .list{
     display: none;
+}
+.hamburgerList{
+    list-style: none;
+    border: 2px solid black;
+}
+.hamburgerItem{
+    margin: 1.4rem;
+}
+.hamburgerSection{
+    position: absolute;
+    top:41px ;
+    right: 0;
+    z-index: 100;
+    width: 60%;
+    padding: 10px;
+    background-color: white;
 }
 @media screen and (min-width: 765px){
     .list{
@@ -16,6 +33,9 @@
         gap: 1rem;
     }   
     .hamburger{
+        display: none;
+    }
+    .hamburgerList{
         display: none;
     }
 }
