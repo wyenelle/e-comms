@@ -11,7 +11,8 @@ const Men = () => {
     <div className={styles.container}>
       <Swiper
         pagination={{
-            dynamicBullets: true
+            dynamicBullets: true,
+            clickable: true
         }}
 
         slidesPerView={2}
