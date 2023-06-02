@@ -15,4 +15,7 @@
         justify-content: space-between;
         gap: 1rem;
     }   
+    .hamburger{
+        display: none;
+    }
 }

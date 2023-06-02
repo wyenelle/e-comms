@@ -8,23 +8,46 @@ import "swiper/css/navigation";
 
 const Men = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.men}>
+        <h2>Men</h2>
       <Swiper
         pagination={{
             dynamicBullets: true,
             clickable: true
         }}
-
-        slidesPerView={2}
+        autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+        navigation
+        slidesPerView={1}
         modules={[Pagination,Navigation]}
+        className={styles.container}
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        ...
+        <SwiperSlide>
+            <div className={styles.swipe}>
+                <h1 className="">1</h1> 
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div className={styles.swipe}>
+                <h1>2</h1>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div className={styles.swipe}>
+                <h1>3</h1>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div className={styles.swipe}>
+                <h1>4</h1> 
+            </div>
+        </SwiperSlide>
+        
       </Swiper>
     </div>
+
   );
 };
 

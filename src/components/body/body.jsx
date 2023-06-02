@@ -1,11 +1,13 @@
 import Men from './men'
-
+import Women from './women'
+import styles from './body.module.css'
 
 const Body = () => {
   return (
-    <div>
+    <section className={styles.container}>
         <Men />
-    </div>
+        <Women/>
+    </section>
   )
 }
 
