@@ -1,16 +1,21 @@
 import styles from "./men.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper";
 
 import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 const Men = () => {
   return (
     <div className={styles.container}>
       <Swiper
-        spaceBetween={50}
-        slidesPerView={3}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
+        pagination={{
+            dynamicBullets: true
+        }}
+
+        slidesPerView={2}
+        modules={[Pagination,Navigation]}
       >
         <SwiperSlide>Slide 1</SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
