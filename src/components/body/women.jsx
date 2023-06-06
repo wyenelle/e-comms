@@ -48,7 +48,7 @@ const Women = () => {
             return(
                 <SwiperSlide key={slide.id}>
                 <div className={styles.swipe}>
-                    <img src={slide.img} alt={slide.alt} />
+                    <img src={slide.img} alt={slide.alt}  className={styles.img}/>
                 </div>
             </SwiperSlide>
             )
