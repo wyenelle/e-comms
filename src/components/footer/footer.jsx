@@ -11,18 +11,21 @@ const Footer = () => {
        <Link to='/'>
         <AiFillHome size={35} />
        </Link>
-        <BsCartFill size={35} />
-        <MdEmail size={35}/>
+       <Link to='cart'>
+         <BsCartFill size={35} />
+       </Link>
+       <Link to='message'>
+         <MdEmail size={35}/>
+       </Link>
+       <Link to='favorite'>
         <AiFillHeart size={35} />
+        </Link>
+        <Link to='profile'>
         <BsPersonFill size={35} />
+        </Link>
     </div>
   )
 }
 
 export default Footer
 
-/* BISolidHomeSmile */
-/* MdEmail */
-/* AiFillHeart */
-/* BsCartFill */
-/*BsPersonFill  */
