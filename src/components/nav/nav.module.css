@@ -2,9 +2,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 2px solid red; */
-    height: 40px;
+    height: 60px;
     position: relative;
+    width: 90%;
+    margin-bottom: 3rem;
+}
+.header{
+    letter-spacing: 8px;
+    font-size: 18px;
 }
 .list{
     display: none;

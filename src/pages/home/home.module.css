@@ -7,14 +7,7 @@
     flex-direction: column;
     gap: 2rem;
 }
-.footer{
-    position: fixed;
-    bottom: 0;
-    height: 50px;
-    width: 95%;
-    z-index: 100;
-    background-color: white;
-}
+
 .appSection::-webkit-scrollbar{
     display: none;
 }

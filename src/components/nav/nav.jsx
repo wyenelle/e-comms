@@ -10,7 +10,7 @@ const Nav = ({showHamburger,setShowHamburger}) => {
   }
   return (
     <nav className={styles.container}>
-      <h1>cliptoShop</h1>
+      <h1 className={styles.header}>cliptoShop</h1>
       <ul className={styles.list}>
         <li className={styles.listItem}>register</li>
         <li className={styles.listItem}>login</li>
