@@ -2,11 +2,27 @@ import styles from "./men.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
 
+import helper from "../../helper/helper";
+import { useState } from "react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const Men = () => {
+  const [slides, setSlides] = useState([
+    {
+      id: 1,img: helper.Men,alt: 'woman clothing',price:1234
+  },
+  {
+      id: 2,img: helper.MenBlack,alt: 'woman clothing',price:1234
+  },
+  {
+      id: 3,img: helper.MenBrown,alt: 'woman clothing',price:1234
+  },
+  {
+      id: 4,img: helper.Men,alt: 'woman clothing',price:1234
+  },
+  ]);
   return (
     <div className={styles.men}>
       <h2>Men</h2>
@@ -26,30 +42,20 @@ const Men = () => {
         className={styles.container}
       >
         {/* first horizontal slide */}
-        <SwiperSlide>
-          <div className={styles.swipe}>
-            <h1 className="">1</h1>
-          </div>
-        </SwiperSlide>
+       {
+        slides.map((slide) => {
+          return (
+            <SwiperSlide key={slide.id}>
+            <div className={styles.swipe}>
+              <img src={slide.img} alt={slide.alt} />
+            </div>
+          </SwiperSlide>
+          )
+        }
+        )
+       }
 
-        {/* Second horizontal slide */}
-        <SwiperSlide>
-         <div className={styles.swipe}>
-           <h1>2</h1>
-         </div>
-        </SwiperSlide>
-
-        {/* Third slide */}
-        <SwiperSlide>
-          <div className={styles.swipe}>
-            <h1>3</h1>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className={styles.swipe}>
-            <h1>4</h1>
-          </div>
-        </SwiperSlide>
+        
       </Swiper>
     </div>
   );    
