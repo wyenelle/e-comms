@@ -2,6 +2,8 @@ import styles from './women.module.css'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
 
+import helper from '../../helper/helper';
+
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
