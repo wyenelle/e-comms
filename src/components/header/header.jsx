@@ -18,6 +18,7 @@ const Header = () => {
           delay: 4500,
           disableOnInteraction: false,
         }}
+        loop={true }
         slidesPerView={1}
         // effect="fade"
         modules={[Pagination,Autoplay,EffectFade]}

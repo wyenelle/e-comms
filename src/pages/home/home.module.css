@@ -1,0 +1,22 @@
+.appSection{
+    /* border: 2px solid black; */
+    width: 95%;
+    height: 97%;
+    overflow: scroll;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 95%;
+    z-index: 100;
+    background-color: white;
+}
+.appSection::-webkit-scrollbar{
+    display: none;
+}
+@media screen and (min-width:768px){
+    .wrapper{
+        height: auto;
+    }
+}

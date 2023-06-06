@@ -1,0 +1,23 @@
+.accessories{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+.container{
+    width: 100%;
+    border: 2px solid black;
+    height: 50vh;
+    
+}
+.swipe{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    height: 100%;
+
+}
+.box{
+    width: 1000%;
+    border: 1px solid gray;
+    height: 100%;
+}
