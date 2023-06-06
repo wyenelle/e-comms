@@ -1,7 +1,7 @@
 import styles from './women.module.css'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
-
+import { useState } from 'react';
 import helper from '../../helper/helper';
 
 import "swiper/css";
@@ -9,6 +9,22 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const Women = () => {
+    const [slides, setSlides] = useState(
+        [
+            {
+                id: 1,img: helper.Woman,alt: 'woman clothing',price:1234
+            },
+            {
+                id: 2,img: helper.WomanBlack,alt: 'woman clothing',price:1234
+            },
+            {
+                id: 3,img: helper.WomanBrown,alt: 'woman clothing',price:1234
+            },
+            {
+                id: 4,img: helper.Woman,alt: 'woman clothing',price:1234
+            },
+        ]
+    )
   return (
     <div className={styles.women}>
         <h2>Women</h2>
@@ -22,30 +38,26 @@ const Women = () => {
         disableOnInteraction: false,
       }}
     navigation
+    loop
     slidesPerView={1}
     modules={[Pagination,Navigation]}
     className={styles.container}
   >
-    <SwiperSlide>
-        <div className={styles.swipe}>
-            <h1 className="">1</h1> 
-        </div>
-    </SwiperSlide>
-    <SwiperSlide>
-        <div className={styles.swipe}>
-            <h1>2</h1>
-        </div>
-    </SwiperSlide>
-    <SwiperSlide>
-        <div className={styles.swipe}>
-            <h1>3</h1>
-        </div>
-    </SwiperSlide>
-    <SwiperSlide>
-        <div className={styles.swipe}>
-            <h1>4</h1> 
-        </div>
-    </SwiperSlide>
+    {
+        slides.map((slide) => {
+            return(
+                <SwiperSlide key={slide.id}>
+                <div className={styles.swipe}>
+                    <img src={slide.img} alt={slide.alt} />
+                </div>
+            </SwiperSlide>
+            )
+        }
+        )
+
+        
+    }
+    
   </Swiper>
   </div>
 
