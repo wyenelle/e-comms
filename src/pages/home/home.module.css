@@ -3,6 +3,9 @@
     width: 90%;
     height: 97%;
     overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 .footer{
     position: fixed;

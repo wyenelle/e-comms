@@ -35,7 +35,7 @@ const Men = () => {
           delay: 2500,
           disableOnInteraction: false,
         }}
-        navigation
+        // navigation
         slidesPerView={1}
         loop
         modules={[Pagination, Navigation]}

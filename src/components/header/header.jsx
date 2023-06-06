@@ -37,7 +37,7 @@ const Header = () => {
           <div className={styles.col2}></div>
         </SwiperSlide>
 
-        <SwiperSlide className={styles.slide}>
+        <SwiperSlide className={styles.slide2}>
           <div className={styles.header}>
             <h1>Home of all your needs</h1>
             <p>
