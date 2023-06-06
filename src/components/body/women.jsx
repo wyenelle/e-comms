@@ -37,7 +37,7 @@ const Women = () => {
         delay: 2500,
         disableOnInteraction: false,
       }}
-    navigation
+    // navigation
     loop
     slidesPerView={1}
     modules={[Pagination,Navigation]}
