@@ -11,7 +11,16 @@ const Nav = ({showHamburger,setShowHamburger}) => {
   return (
     <nav className={styles.container}>
       <h1 className={styles.header}>cliptoShop</h1>
+
       <ul className={styles.list}>
+        <li className={styles.listItem}>favourites</li>
+        <li className={styles.listItem}>cart</li>
+        <li className={styles.listItem}>messages</li>
+      </ul>
+
+
+      <ul className={styles.list}>
+        <li className={styles.listItem}>profile</li>
         <li className={styles.listItem}>register</li>
         <li className={styles.listItem}>login</li>
       </ul>

@@ -14,3 +14,10 @@ h1,h2{
     font-family: Kanit, sans-serif;
     /* font-weight: 900; */
 }
+body{
+    background-color:#030016 ;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100;
+}
+/*  */

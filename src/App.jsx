@@ -7,6 +7,8 @@ import Cart from "./pages/cart";
 import Nav from "./components/nav/nav";
 import Footer from "./components/footer/footer";
 import Message from "./pages/message/message";
+import Profile from "./pages/profile/profile";
+import Favourite from "./pages/favourite/favourite";
 
 function App() {
   const [showHamburger, setShowHamburger] = useState(false);
@@ -28,6 +30,8 @@ function App() {
         />
         <Route path="/cart" element={<Cart />} />
         <Route path="/message" element={<Message />} />
+        <Route path="/favourite" element={<Favourite />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
       <div className={styles.space}></div>
       <aside className={styles.footer}>

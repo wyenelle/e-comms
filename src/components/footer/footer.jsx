@@ -9,19 +9,19 @@ const Footer = () => {
   return (
     <div className={styles.container}>
        <Link to='/'>
-        <AiFillHome size={35} />
+        <AiFillHome size={30} />
        </Link>
        <Link to='cart'>
-         <BsCartFill size={35} />
+         <BsCartFill size={30} />
        </Link>
        <Link to='message'>
-         <MdEmail size={35}/>
+         <MdEmail size={30}/>
        </Link>
        <Link to='favorite'>
-        <AiFillHeart size={35} />
+        <AiFillHeart size={30} />
         </Link>
         <Link to='profile'>
-        <BsPersonFill size={35} />
+        <BsPersonFill size={30} />
         </Link>
     </div>
   )
